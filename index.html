@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWare Ceramic - Luxury Tiles for Timeless Living</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="HomeWare Ceramic Logo">
+            </div>
+            <ul>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-section">
+            <div class="hero-text">
+                <h1>HomeWare Ceramic</h1>
+                <p>Luxury Tiles for Timeless Living</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="collections">
+            <h2>Our Collections</h2>
+            <div id="search-container">
+                <input type="text" id="search-bar" placeholder="Search for tiles...">
+            </div>
+            <div class="collection-gallery">
+                </div>
+        </section>
+
+        <section id="features">
+            <h2>Features</h2>
+            <div class="feature-list">
+                </div>
+        </section>
+
+        <section id="applications">
+            <h2>Applications</h2>
+            <div class="application-list">
+                </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+                <div id="form-status"></div>
+            </form>
+            <div class="whatsapp-integration">
+                <a href="https://wa.me/your-whatsapp-number" target="_blank">
+                    <img src="images/whatsapp-logo.png" alt="WhatsApp">
+                    <span>Chat with us on WhatsApp</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HomeWare Ceramic. All rights reserved.</p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

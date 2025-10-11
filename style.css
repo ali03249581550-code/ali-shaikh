@@ -1,0 +1,291 @@
+/* General Body Styles */
+body {
+    background-color: #E87A24; /* Dark Orange */
+    color: #000000; /* Black */
+    font-family: 'Garamond', 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Header and Hero Section */
+header {
+    /* Placeholder for farmhouse silhouette.
+       A dark, spooky image would be placed here. */
+    background: #000000 url('images/farmhouse_silhouette.png') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFD700; /* Gold */
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Darker overlay for cinematic feel */
+}
+
+.hero-section {
+    z-index: 1;
+}
+
+.hero-text h1 {
+    font-size: 4.5em;
+    margin-bottom: 0;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.7); /* Gold glow */
+}
+
+.hero-text p {
+    font-size: 1.6em;
+    margin-top: 10px;
+}
+
+/* Navigation */
+nav {
+    position: absolute;
+    top: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.logo img {
+    width: 150px;
+    /* Placeholder style for logo */
+    border: 2px solid #FFD700;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #FFD700; /* Gold */
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: color 0.4s, text-shadow 0.4s;
+}
+
+nav ul li a:hover {
+    color: #FFFFFF;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+/* Main Content */
+main {
+    padding: 50px 20px;
+    background-color: #E87A24;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 40px;
+    color: #000000; /* Black */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Tile Collections */
+/* Search Bar */
+#search-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#search-bar {
+    padding: 15px;
+    width: 50%;
+    max-width: 600px;
+    font-size: 1.2em;
+    border: 2px solid #000000;
+    background: #FFFFFF;
+    color: #000000;
+}
+
+.collection-gallery .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.tile-item {
+    background: #000000;
+    border: 2px solid #FFD700;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.tile-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.tile-item img {
+    width: 100%;
+    height: 200px;
+    background-color: #FFD700; /* Gold placeholder for tile texture */
+    border: 1px solid #000;
+    margin-bottom: 15px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5); /* Glowing effect */
+    transition: box-shadow 0.4s;
+}
+
+.tile-item:hover img {
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.9); /* Enhanced glow on hover */
+}
+
+.tile-item h4 {
+    color: #FFD700;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.whatsapp-inquiry {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #FFD700;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.whatsapp-inquiry:hover {
+    background-color: #000000;
+    color: #FFD700;
+    border: 1px solid #FFD700;
+}
+
+/* Features and Applications */
+.feature-list, .application-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.list-item {
+    background: #000000;
+    color: #FFFFFF;
+    padding: 20px;
+    border-left: 5px solid #FFD700;
+    flex-basis: 300px;
+    transition: transform 0.3s;
+}
+
+.list-item:hover {
+    transform: scale(1.05);
+}
+
+.list-item h4 {
+    color: #FFD700;
+    font-size: 1.4em;
+    margin-top: 0;
+}
+
+/* Contact Form */
+#contact {
+    background: #000000;
+    color: #FFD700;
+    padding: 50px 20px;
+}
+
+#contact h2 {
+    color: #FFD700;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form input,
+#contact-form textarea {
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 1em;
+    border: 1px solid #FFD700;
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+#contact-form button {
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #FFD700;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #E87A24;
+    color: #000000;
+}
+
+#form-status {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.whatsapp-integration {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.whatsapp-integration a {
+    text-decoration: none;
+    color: #FFD700;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.whatsapp-integration a:hover {
+    color: #FFFFFF;
+}
+
+.whatsapp-integration img {
+    width: 30px;
+    margin-right: 10px;
+    /* Placeholder for WhatsApp logo */
+    border: 1px solid #FFD700;
+    border-radius: 50%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #FFD700;
+    border-top: 2px solid #FFD700;
+}
